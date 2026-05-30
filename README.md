@@ -34,11 +34,11 @@ npm run preview
 
 ## Скрипты
 
-| Команда           | Описание                          |
-| ----------------- | --------------------------------- |
-| `npm run dev`     | Dev-сервер с hot reload           |
-| `npm run build`   | Production-сборка                 |
-| `npm run preview` | Просмотр production-сборки        |
+| Команда           | Описание                           |
+| ----------------- | ---------------------------------- |
+| `npm run dev`     | Dev-сервер с hot reload            |
+| `npm run build`   | Production-сборка                  |
+| `npm run preview` | Просмотр production-сборки         |
 | `npm run format`  | Форматирование кода через Prettier |
 
 ## Стек
@@ -72,8 +72,8 @@ spy-game/
 
 ```json
 [
-  { "name": "Локации", "file": "locations.json" },
-  { "name": "Предметы", "file": "items.json" }
+	{ "name": "Локации", "file": "locations.json" },
+	{ "name": "Предметы", "file": "items.json" }
 ]
 ```
 

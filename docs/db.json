@@ -1,0 +1,26 @@
+[
+	{
+		"name": "Локации",
+		"file": "locations.json"
+	},
+	{
+		"name": "Предметы",
+		"file": "items.json"
+	},
+	{
+		"name": "Профессии",
+		"file": "professions.json"
+	},
+	{
+		"name": "Животные",
+		"file": "animals.json"
+	},
+	{
+		"name": "Еда",
+		"file": "food.json"
+	},
+	{
+		"name": "Растения",
+		"file": "plants.json"
+	}
+]

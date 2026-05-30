@@ -7,4 +7,7 @@ export default defineConfig({
 		strictPort: true
 	},
 	base: '/Spy-Game/',
+	build: {
+		outDir: 'docs'
+	}
 })
