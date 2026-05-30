@@ -1,5 +1,7 @@
 import './style.css'
 
+const BASE_URL = import.meta.env.BASE_URL
+
 const OVERLAY_DURATION = 550
 const TRANSITION_DURATION = 600
 
@@ -111,7 +113,7 @@ function hideOverlay() {
 
 async function loadThemes() {
 	try {
-		const res = await fetch('/db.json')
+		const res = await fetch(`${BASE_URL}db.json`)
 		if (!res.ok) throw new Error('Не удалось загрузить каталог тем')
 		gameState.themes = await res.json()
 		gameState.themesError = null
@@ -129,7 +131,7 @@ async function loadThemeWords() {
 	gameState.wordsError = null
 
 	try {
-		const res = await fetch(`/${theme.file}`)
+		const res = await fetch(`${BASE_URL}${theme.file}`)
 		if (!res.ok) throw new Error('Не удалось загрузить слова темы')
 		const words = await res.json()
 		if (!Array.isArray(words) || words.length === 0) {
